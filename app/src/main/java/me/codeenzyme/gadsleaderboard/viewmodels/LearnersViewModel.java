@@ -16,6 +16,7 @@ import me.codeenzyme.gadsleaderboard.data.remote.LearnersService;
 import me.codeenzyme.gadsleaderboard.data.remote.RetrofitManager;
 import me.codeenzyme.gadsleaderboard.models.TopLearner;
 import me.codeenzyme.gadsleaderboard.models.TopSkilled;
+import me.codeenzyme.gadsleaderboard.services.java.SubmitProjectService;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -54,6 +55,10 @@ public class LearnersViewModel extends AndroidViewModel {
 
     public LiveData<Boolean> getIsTopSkilledLoaded() {
         return isTopSkilledLoaded;
+    }
+
+    public LiveData<Boolean> submitProject(String firstName, String lastName, String email, String projectUrl) {
+        return SubmitProjectService.getInstance().submit(firstName, lastName, email, projectUrl);
     }
 
     private void loadTopLearners() {

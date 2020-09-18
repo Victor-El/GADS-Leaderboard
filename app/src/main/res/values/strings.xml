@@ -3,10 +3,13 @@
     <string name="base_url">https://gadsapi.herokuapp.com</string>
     <string name="learning_leaders">Learning Leaders</string>
     <string name="skill_leaders">Skill IQ Leaders</string>
-    <string name="submit">Submit</string>
     <string name="learner_detail">%1$d Learning hours, %2$s</string>
     <string name="skilled_detail">%1$d Skill IQ, %2$s</string>
     <string name="google_africa_developer_scholarship">Google Africa Developer Scholarship</string>
     <string name="project_submission_activity_title">Project Submission</string>
     <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="project_url">Project URL</string>
+    <string name="submit">Submit</string>
 </resources>
