@@ -87,9 +87,17 @@ public class ProjectSubmissionActivity extends AppCompatActivity {
                         .observe(ProjectSubmissionActivity.this, new Observer<Boolean>() {
                             @Override
                             public void onChanged(Boolean aBoolean) {
+
                                 if (aBoolean == true) {
+
+                                    firstNameEditText.setText("");
+                                    lastNameEditText.setText("");
+                                    emailEditText.setText("");
+                                    projectUrlEditText.setText("");
+
                                     Toast.makeText(ProjectSubmissionActivity.this, "Successful", Toast.LENGTH_SHORT).show();
                                 } else if(aBoolean == false) {
+
                                     Toast.makeText(ProjectSubmissionActivity.this, "Unsuccessful", Toast.LENGTH_SHORT).show();
                                 }
                             }
